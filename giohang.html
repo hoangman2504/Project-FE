@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng</title>
+</head>
+<body>
+  <style>
+    h2.title-shopping {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.container-shopping {
+  width: 25.8%;
+  height: 700px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: sandybrown;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#dathang {
+  margin-top: 60px;
+  padding: 15px 165px;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#dathang:hover {
+  background-color: skyblue;
+}
+
+.donhang {
+  width: 80%;
+  height: 450px;
+  margin-left: 18px;
+  margin-top: 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  position: fixed;
+}
+
+hr {
+  margin: 0;
+  border: 1px solid #eee;
+}
+
+.one {
+  margin: 0;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.onee {
+  margin: 0;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+ .close {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} 
+
+.number {
+  max-width: 25px;
+  max-height: 10px;
+}
+
+#shop {
+  padding-left: 17px;
+}
+
+.removeAllBtn {
+  width: 100px;
+  margin-left: 345px;
+}
+
+.boder {
+  margin-top: 150px;
+}
+
+.featured-products {
+  padding: 40px;
+}
+
+.featured-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.featured-product {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 30px;
+}
+
+.featured-product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  height: 207px;
+  width: 250px;
+}
+
+.featured-product-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.featured-product-button:hover {
+  background-color: #3e8e41;
+}
+
+a:hover{
+color: #4CAF50;
+}
+
+.featured-products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.featured-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.featured-product {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: large;
+  margin: 0px;
+  padding: 20px;
+  margin-left: 40%;
+}
+
+.featured-product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  height: 207px;
+  width: 250px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.featured-product img:hover {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.featured-product-name {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.featured-product-price {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.featured-product-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.featured-product-button:hover {
+  background-color: forestgreen;
+  cursor: pointer;
+}
+
+h4 {
+  color: black;
+}
+
+h4:hover {
+  color: #4CAF50;
+  cursor: pointer;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 50px;
+  margin-right: 235px;
+}
+
+  </style>
+  <main>
+   <section class="featured-products">
+    <h3>Sản phẩm nổi bật</h3>
+    <div class="featured-products-grid">
+      <div class="featured-product">
+        <img src="https://product.hstatic.net/200000306799/product/a_2984d4a1de9748c99c9fbc03c17d86d7_master.jpg" />
+        <p class="featured-product-name">Áo hoodie form rộng chùm mông dây bản to nỉ trần...</p>
+        <p1 class="featured-product-price">180.000 đ</p1>
+        <button class="featured-product-button them">Thêm vào giỏ hàng</button>
+      </form>
+      </div>
+      <div class="featured-product">
+        <img src="https://product.hstatic.net/200000306799/product/z3000484108402_c96dc1a129a6e85cc94cd30001498050_f86d8123f44e4ba6b2230110f08797d3_master.jpg" alt="Sản phẩm nổi bật" />
+        <p class="featured-product-name">Áo hoodie DON'T SHOP nam nữ Form rộng WILL</p>
+        <p1 class="featured-product-price">319.000 đ</p1>
+        <button class="featured-product-button them">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+      <div class="featured-product">
+        <img src="https://product.hstatic.net/200000306799/product/1324_20b3ed533ee04626a8ccc14e0b2131e0_master.jpg" alt="Sản phẩm nổi bật" />
+        <p class="featured-product-name">Áo Khoác HOODIE nỉ bông mũ to 2 lớp Unisex form... </p>
+        <p1 class="featured-product-price">275.000 đ</p1>
+        <button class="featured-product-button them">Thêm vào giỏ hàng</button>
+      </div>
+      <div class="featured-product">
+        <img src="https://product.hstatic.net/200000306799/product/0_a9904c35dddf4ca792b84f894ad249fd_master.jpg" alt="Sản phẩm nổi bật" />
+        <p class="featured-product-name">Áo nỉ XIAOZHAINV cổ tròn dáng rộng màu trắng</p>
+        <p1 class="featured-product-price">129.000 đ</p1>
+        <button class="featured-product-button them">Thêm vào giỏ hàng</button>
+      </div>
+      <div class="featured-product">
+        <img src="https://product.hstatic.net/200000306799/product/1__1__e6064bf9f83647a0bffd52c8c66fbe10_master.jpg" alt="Sản phẩm nổi bật" />
+        <p class="featured-product-name">Áo khoác nỉ nữ hoodie form rộng cute hàn quốc...</p>
+        <p1 class="featured-product-price">145.000 đ</p1>
+        <button class="featured-product-button them">Thêm vào giỏ hàng</button>
+      </div>
+    </main>
+      
+
+  <div class="container-shopping">
+    <label for="form-shopping"><i class="fa-solid fa-xmark close"></i></label>
+    <h2 class="title-shopping">Giỏ hàng của tôi</h2>
+    <h4 class="removeAllBtn" style="cursor: pointer">Xóa hết</h4>
+    <div class="cart">
+      <h4>Giỏ hàng</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Xóa</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Tổng cộng</td>
+            <td colspan="2" class="total-price">0 đ</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="boder">
+      <hr>
+      
+      <p class="onee">
+        Đã bao gồm thuế. Phí vận chuyển được tính khi thanh toán.
+      </p>
+      <button id="dathang">Đặt hàng</button>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  const btn = document.querySelectorAll(".them");
+  const cartItems = []; // Biến lưu trữ danh sách các sản phẩm trong giỏ hàng
+btn.forEach(function (button, index) {
+  button.addEventListener("click", function (event) {
+    {
+      var btnItem = event.target;
+      var product = this.parentElement;
+      var productImg = product.querySelector("img").src;
+      var productName = product.querySelector("p").innerText;
+      var productPrice = product.querySelector("p1").innerText.replace("đ", "");
+      addcart(productPrice, productImg, productName);
+    }
+  });
+});
+
+function addcart(productPrice, productImg, productName) {
+  var isExist = false;
+  cartItems.forEach(item => {
+    if (item.name === productName) {
+      item.quantity++;
+      isExist = true;
+    }
+  });
+
+  if (!isExist) {
+    var newItem = {
+      name: productName,
+      price: productPrice,
+      image: productImg,
+      quantity: 1
+    }
+    cartItems.push(newItem);
+  }
+
+  // Thêm đoạn mã của tôi để tăng số lượng sản phẩm
+  var rows = document.querySelectorAll(".cart-item");
+  rows.forEach(row => {
+    var img = row.querySelector("img");
+    if (img.src === productImg) {
+      var qtyInput = row.querySelector(".cart-item-qty");
+      qtyInput.value = parseInt(qtyInput.value) + 1;
+    }
+  });
+
+  var addtr = document.createElement("tr");
+  addtr.classList.add("cart-item");
+  var trcontent =
+  '<tr class="cart-item"><td style="display: flex;align-items: center;"><img style="width:70px;height:70px;" src=' +
+  productImg +
+  ' alt="giohang">' +
+  productName +
+  "</td><td><p><span class='cart-item-price'>" +
+  productPrice +
+  '</span><sup>đ</sup></p></td><td id="shop"><input style="outline: none;" class="number cart-item-qty" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="remove">Xóa</span></td></tr>';
+    
+  addtr.innerHTML = trcontent;
+  var cartTale = document.querySelector("tbody");
+  var rows = cartTale.querySelectorAll(".cart-item");
+
+  if (!isExist) {
+    cartTale.append(addtr);
+  }
+
+  tinhtong();
+  xoa();
+  tang();
+}
+
+function tinhtong() {
+  var cartItems = document.querySelectorAll(".cart-item");
+  var total = 0;
+  for (var i = 0; i < cartItems.length; i++) {
+    var cartItem = cartItems[i];
+    var priceElement = cartItem.querySelector(".cart-item-price");
+    var qtyElement = cartItem.querySelector(".cart-item-qty");
+    var price = parseFloat(priceElement.innerText.replace("đ", ""));
+    var qty = parseFloat(qtyElement.value);
+    total += price * qty;
+  }
+  var totalElement = document.querySelector(".total-price");
+  totalElement.innerText = total.toFixed(0) + ".000đ";
+  }
+  
+  
+
+function xoa() {
+  var cartItem = document.querySelectorAll("tbody tr ");
+  for (var i = 0; i < cartItem.length; i++) {
+    var productT = document.querySelectorAll(".remove");
+    productT[i].addEventListener("click", function (event) {
+      var cartDelete = event.target;
+      var removeAll = cartDelete.parentElement.parentElement;
+      removeAll.remove();
+      tinhtong();
+    });
+  }
+}
+
+const removeAllBtn = document.querySelector(".removeAllBtn");
+removeAllBtn.addEventListener("click", function () {
+  xoaHet();
+});
+
+function xoaHet() {
+  var cartTable = document.querySelector("tbody");
+  cartTable.innerHTML = ""; // xóa tất cả các item trong giỏ hàng
+  var A = document.querySelector(".one span");
+  A.innerHTML = "0"; // trả về giá trị 0đ
+}
+
+const dathangBtn = document.querySelector("#dathang");
+dathangBtn.addEventListener("click", function() {
+  confirm("Bạn đã đặt hàng thành công");
+  // Lấy tất cả các sản phẩm trong giỏ hàng
+const cartItemsInDOM = document.querySelectorAll(".cart-item");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: none;
+  height: 2950px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  width: auto;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+  color: khaki;
+  cursor: pointer;
+}
+
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: wheat !important;
+  height: 343px;
+  padding: 44px;
+  padding-bottom: 25px;
+  padding-right: 0px;
+}
+
+.hero-text {
+  flex-grow: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+.hero-img {
+  width: 50%;
+  height: auto;
+}
+
+.featured-products {
+  padding: 40px;
+}
+
+.featured-products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.featured-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.featured-product {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 35px 5px;
+  width: 235px;
+}
+
+.featured-product-name {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.featured-product-price {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.featured-product-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.featured-product-button:hover {
+  background-color: #3e8e41;
+}
+
+li:hover {
+  color: #4caf50;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+.item___1EjAT {
+  width: 330px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 5px;
+  background-color: tan;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item___1EjAT:hover {
+  background-color: burlywood;
+}
+
+/* .mySlides {
+  display: none;
+  margin-top: -10px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  margin-left: 13px;
+}
+
+.mySlides:first-child {
+  display: block;
+} */
+
+.slideshow-container {
+  width: 350px;
+  height: 412px;
+  margin-top: 206px;
+  margin-right: -75px;
+}
+
+.slideshow img {
+  display: none;
+  width: 325px;
+  margin-top: -113px;
+  margin-left: -50px;
+  height: 358px;
+}
+
+.slideshow img:first-child {
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: 5px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  margin-left: -5px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+  text-align: center;
+  padding: 20px;
+  font-size: 0;
+  margin-left: -120px;
+}
+
+.dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active,
+.dot:hover {
+  background-color: #333;
+}
+
+.featured-product img {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.featured-product img:hover {
+  opacity: 0.8;
+  filter: brightness(0.6) saturate(1.5);
+  cursor: pointer;
+}
+
+.featured-product button {
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #eee;
+  width: 60%;
+  margin-top: 60px;
+}
+
+h3 {
+  color: #1e90ff;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+aside .aside-img {
+  padding: 15px 15px;
+  background-color: #f5f5f5;
+}
+
+aside a {
+  color: #1e90ff;
+}
+
+aside a:hover {
+  color: skyblue;
+}
+
+.aside-qc {
+  text-align: center;
+  margin-left: -100px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+.aside-img img:hover {
+  transform: translateX(30px);
+  transition: all 0.5s ease-out;
+}
+
+footer h4 {
+  color: #fff;
+  text-align: center;
+  padding: 25px 100px;
+  background-color: tan;
+  margin-top: 63px;
+}
+
+footer h4 a {
+  color: #fff;
+  text-decoration: none;
+}

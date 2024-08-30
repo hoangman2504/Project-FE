@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký</title>
+  </head>
+  <body>
+    <style>
+      footer h4 {
+        color: #fff;
+        text-align: center;
+        padding: 25px 100px;
+        background-color: tan;
+        margin-top: 45px;
+      }
+
+      body {
+        margin: 0;
+        height: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      hr {
+        border: 1px solid #eee;
+        width: 60%;
+        margin-right: 300px;
+        margin-top: 630px;
+      }
+
+      html {
+        background-color: khaki;
+      }
+
+      input[type="submit"] {
+        border-radius: 0;
+        box-shadow: 5px 5px gray;
+      }
+
+      input[type="submit"]:active {
+        box-shadow: none;
+        transform: translate(4px, 4px);
+        transition: 0.25s;
+      }
+
+      #login {
+        width: 400px;
+        height: 420px;
+        background: whitesmoke;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 25px 25px 15px;
+        box-sizing: border-box;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        margin: 0;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 22px;
+        color: burlywood;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: calc(100% - 23px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-bottom: 1px solid whitesmoke;
+        outline: none;
+        text-transform: capitalize;
+      }
+
+      input[type="submit"] {
+        background: khaki;
+        color: black;
+        border: none;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: tan;
+      }
+
+      .check {
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 14px;
+        display: inline;
+        margin-right: 80px;
+      }
+
+      a {
+        text-decoration: none;
+        color: orange;
+      }
+
+      a:hover {
+        color: coral;
+      }
+
+      footer h4 hr {
+        margin-top: 60px;
+      }
+
+      footer h4 a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      footer h4 a:hover {
+        color: #fff;
+      }
+    </style>
+    <main>
+      <div id="login">
+        <h2>Shop Fearow</h2>
+        <form action="">
+          <input type="text" placeholder="Họ và tên" name="username" required />
+          <input
+            type="password"
+            placeholder="Tên người dùng"
+            name="password"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Tài khoản"
+            name="password"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Mật khẩu"
+            name="password"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Nhập lại mật khẩu mới"
+            name="password"
+            required
+          />
+          <input
+            class="check"
+            type="checkbox"
+            placeholder="Lưu mật khẩu"
+            name="checkbox"
+            required
+          />
+          <p>Ghi nhớ mật khẩu</p>
+          <a
+            href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop"
+            >Forgot password?</a
+          >
+          <div
+            style="color: red; font-weight: bold; margin-bottom: 10px"
+            id="error-message"
+          ></div>
+          <input type="submit" value="Đăng ký" />
+        </form>
+      </div>
+    </main>
+
+    <hr />
+
+    <footer>
+      <h4>
+        Copyright © 2023 <a href="https://fearow.vn/">Fearow</a>. Powered by
+        Haravan
+      </h4>
+    </footer>
+
+    <script>
+      const form = document.querySelector("form");
+      const errorMessage = document.querySelector("#error-message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const username = e.target.username.value;
+        const password = e.target.password.value;
+
+        if (username !== "exampleusername" || password !== "examplepassword") {
+          errorMessage.innerText =
+            "Tài khoản hoặc mật khẩu của bạn nhập đã sai";
+        } else {
+          window.location.href = "Shop Fearow";
+        }
+      });
+    </script>
+  </body>
+</html>
